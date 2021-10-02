@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+
+    <ImageView
+        android:id="@+id/cyan_image"
+        android:layout_width="415dp"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cyan_particle_2"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/logo"
+        android:layout_width="332dp"
+        android:layout_height="336dp"
+        android:src="@drawable/logo_3"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_planet"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        android:elevation="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/planets" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_rocket"
+        android:layout_width="400dp"
+        android:elevation="2dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintVertical_bias="0.496"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/rocket" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
